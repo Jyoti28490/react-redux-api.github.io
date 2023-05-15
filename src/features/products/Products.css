@@ -1,0 +1,83 @@
+.cardWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.1rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .cardWrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.4rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: arial;
+  background-color: #f1f1f3;
+}
+
+.card img {
+  height: 240px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.price {
+  color: rgba(14, 13, 13);
+  font-size: 22px;
+}
+
+.card > button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.buttonWrapper {
+  margin: 2rem 0rem;
+}
+
+.buttonWrapper button {
+  border: none;
+  outline: 0;
+  outline: none;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* .card p:last-child > button {
+  align-self: flex-end;
+  background-color: green;
+}
+
+
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+}
+
+} */
